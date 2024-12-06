@@ -1,0 +1,58 @@
+.banner-principal{
+   height: 60vh;
+}
+
+.banner-principal .container, .banner-principal .row{
+    height: 100%;
+}
+
+.banner-principal__title{
+    font-size: 60px;
+    font-family: var(--calibri);
+}
+
+.banner-principal__subtitle{
+    font-size: 24px;
+}
+
+.terminal-carousel{
+    width: 80%;
+}
+
+.card-ocensa.menu-map a{
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.card-ocensa.menu-map{
+    position: relative;
+}
+
+.card-ocensa.menu-map::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 17px;
+    background-color: var(--green-ocensa);
+}
+
+.card-ocensa .number-large{
+    font-size: 40px;
+}
+
+.card-ocensa-carousel{
+    width: 100%;
+    max-width: 200px;
+}
+
+.bg-pattern-2024{
+    background-image: url('/assets/img/textura-puntos.svg');
+}
+
+@media screen and (max-width: 480px) {
+    .banner-principal{
+        height: auto;
+    }
+}
