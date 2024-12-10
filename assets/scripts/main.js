@@ -19,6 +19,16 @@ $(document).ready(function () {
     slidesToShow: 3,
     prevArrow: `<button class="custom-arrow-2024 custom-left-arrow-2024">${leftArrow2024}</button>`,
     nextArrow: `<button class="custom-arrow-2024 custom-right-arrow-2024">${rightArrow2024}</button>`,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
 
   $(".card-ocensa-carousel").slick({

@@ -36,6 +36,13 @@
 .card-ocensa.menu-map a{
     font-size: 20px;
     line-height: 1em;
+    transition: .3s;
+}
+
+.card-ocensa.menu-map a:hover, .card-ocensa.menu-map a.active{
+    color: var(--green-ocensa);
+    transform: scale(1.2);
+    text-decoration: underline;
 }
 
 .card-ocensa.menu-map{
@@ -65,8 +72,47 @@
     background-image: url('/assets/img/textura-puntos.svg');
 }
 
-@media screen and (max-width: 480px) {
+.terminal .divider-vertical{
+    display: inline-block;
+}
+
+.banner-principal .certifieds img{
+    max-width: calc(100% / 7);
+}
+
+@media screen and (max-width: 1200px) {
     .banner-principal{
         height: auto;
     }
+
+    .card-ocensa.menu-map a{
+        font-size: 16px;
+    }
+
+    .card-ocensa.menu-map::before{
+        width: 10px;
+    }
+
+    .terminal .divider-vertical{
+        display: none;
+    }
+
+    .terminal-carousel{
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 900px){
+    .banner-principal__title{
+        font-size: 30px;
+        line-height: 1em;
+    }
+
+    .banner-principal__subtitle{
+        font-size: 18px;
+    }
+
+    .terminal-carousel .slick-dots{
+        bottom: -60px;
+    }
+} 
