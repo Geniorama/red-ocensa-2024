@@ -116,6 +116,21 @@
     color: white;
 }
 
+.button-oc-2024.color-light{
+    background-color: white;
+    color: var(--green-ocensa);
+}
+
+.button-oc-2024.color-light:hover{
+    background-color: var(--gray-dark-ocensa);
+}
+
+.container-video-yt iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
 @media screen and (max-width: 480px) {
     .container-ocensa-2024{
         width: 100%;
