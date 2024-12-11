@@ -70,6 +70,7 @@
 
 .bg-pattern-2024{
     background-image: url('/assets/img/textura-puntos.svg');
+    padding: 32px 0;
 }
 
 .terminal .divider-vertical{
@@ -78,6 +79,14 @@
 
 .banner-principal .certifieds img{
     max-width: calc(100% / 7);
+}
+
+.terminal-bottom img{
+    min-width: 90px;
+}
+
+.notifications-top{
+    gap: 35px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -114,5 +123,13 @@
 
     .terminal-carousel .slick-dots{
         bottom: -60px;
+    }
+
+    .notifications-top{
+        gap: 15px;
+    }
+
+    .terminal-bottom img{
+        min-width: 60px;
     }
 } 
