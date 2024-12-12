@@ -122,10 +122,6 @@
     transition: .3s;
 }
 
-.card-interactive-icons__container.active .card-interactive-icons___box-icon{
-    background-color: var(--border-fill);
-}
-
 .card-interactive-icons___box-description{
     font-size: 12px;
 }
@@ -138,8 +134,12 @@
     cursor: pointer;
 }
 
-.card-interactive-icons__container:hover .card-interactive-icons___box-icon{
+.card-interactive-icons__container:hover .card-interactive-icons___box-icon, .card-interactive-icons__container.active .card-interactive-icons___box-icon{
     background-color: var(--border-fill);
+}
+
+.card-interactive-icons__container:hover .card-interactive-icons___box-icon svg path, .card-interactive-icons__container.active .card-interactive-icons___box-icon svg path{
+   fill: var(--hover-color) !important;
 }
 
 .location-map-dot{
