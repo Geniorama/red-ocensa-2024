@@ -139,7 +139,7 @@
 }
 
 .card-interactive-icons__container:hover .card-interactive-icons___box-icon svg path, .card-interactive-icons__container.active .card-interactive-icons___box-icon svg path{
-   fill: var(--hover-color) !important;
+    fill: var(--hover-color) !important;
 }
 
 .location-map-dot{
