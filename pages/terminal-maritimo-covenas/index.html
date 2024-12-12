@@ -174,7 +174,7 @@
         </div>
       </section>
 
-      <section class="bg-pattern-2024" id="">
+      <section class="bg-pattern-2024" id="menu-map">
         <div
           class="d-flex flex-lg-row flex-column mt-3 mt-lg-0 notifications-top"
         >
@@ -182,8 +182,9 @@
             class="d-flex flex-row align-items-center text-center pl-4 p-2 p-lg-5 card-ocensa menu-map shadow bg-white position-sticky sticky-top"
           >
             <a
+              data-target="info-manual-ambiental"
               href="#"
-              class="text-gray-light-ocensa font-weight-bold font-calibri"
+              class="text-gray-light-ocensa font-weight-bold font-calibri link-menu"
               >Manual <br />
               Ambiental</a
             >
@@ -193,7 +194,8 @@
             ></span>
             <a
               href="#"
-              class="text-gray-light-ocensa font-weight-bold font-calibri"
+              data-target="info-operaciones"
+              class="text-gray-light-ocensa font-weight-bold font-calibri link-menu"
               >Operaciones</a
             >
             <span
@@ -202,7 +204,8 @@
             ></span>
             <a
               href="#"
-              class="text-gray-light-ocensa font-weight-bold font-calibri"
+              data-target="info-sre"
+              class="text-gray-light-ocensa font-weight-bold font-calibri link-menu"
               >Sistema de Respuesta <br />
               Emergencias (SRE)</a
             >
@@ -291,8 +294,8 @@
 
         <!-- Mapa -->
         <div class="row flex-wrap justify-content-center px-4 py-5">
-          <div class="col">
-            <div class="card-interactive-icons px-5 py-3">
+          <div id="col-data-map">
+            <div id="info-manual-ambiental" class="card-interactive-icons px-5 py-3 d-none">
               <h6
                 class="card-interactive-icons___title font-weight-bold text-gray-light-ocensa"
               >
@@ -680,7 +683,7 @@
               class="text-center position-relative"
               style="overflow-x: scroll"
             >
-              <div style="width: 1070px">
+              <div id="container-map-terminal-2024" style="width: 1070px; margin: 0 auto;">
                 <div class="map-terminal-2024__dots">
                   <div
                     class="dots-map-2024 dots-monitoreo d-none"
@@ -735,7 +738,7 @@
                   </div>
 
                   <div
-                    class="dots-map-2024 dots-monitoreo"
+                    class="dots-map-2024 dots-monitoreo d-none"
                     id="covenas-monitoreo-3"
                   >
                     <span
