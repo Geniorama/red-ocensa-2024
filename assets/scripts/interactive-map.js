@@ -30,22 +30,22 @@ if (containersDots && buttonsInteractive) {
 }
 
 const menuInteractive = document.getElementById('menu-map')
+const itemsMenu = menuInteractive.querySelectorAll('.link-menu')
 const mapInteractiveContainer = document.getElementById('container-map-terminal-2024')
 const columnInfo = document.getElementById('col-data-map')
-const cardsInfo = columnInfo.querySelectorAll('.card-interactive-icons')
+const cardsInfo = columnInfo.querySelectorAll('.card-list-info')
 
 if(menuInteractive){
-  const itemsMenu = menuInteractive.querySelectorAll('.link-menu')
   itemsMenu.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault()
       const target = link.dataset.target;
       if(target){
+        resetCards()
         const containerSelected = document.getElementById(target);
         
         if (containerSelected) {
           containerSelected.classList.toggle("d-none");
-
           if (containerSelected.classList.contains("d-none")) {
             link.classList.remove("active");
           } else {
@@ -55,19 +55,31 @@ if(menuInteractive){
           console.log("No existe el contenedor con el id");
         }
 
-        if(cardsInfo){
-          cardsInfo.forEach(card => {
-            if(!card.classList.contains('d-none')){
-              columnInfo.classList.add('col')
-              mapInteractiveContainer.style.margin = "unset"
-            } else {
-              columnInfo.classList.remove('col')
-              mapInteractiveContainer.style.margin = "0 auto"
-            }
-          })
-        }
+        columnInfo.classList.add('col')
+        mapInteractiveContainer.style.margin = "unset"
+
+        
       }
     })
   });
 }
 
+const resetCards = () => {
+  cardsInfo.forEach(card => {
+    card.classList.add('d-none')
+  })
+
+  itemsMenu.forEach(item => {
+    item.classList.remove('active')
+  })
+}
+
+const resetMap = () => {
+  containersDots.forEach(container => {
+    container.classList.add('d-none')
+  })
+
+  buttonsInteractive.forEach(button => {
+    button.classList.remove('active')
+  })
+}
