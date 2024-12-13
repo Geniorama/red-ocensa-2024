@@ -42,6 +42,7 @@ if(menuInteractive){
       const target = link.dataset.target;
       if(target){
         resetCards()
+        resetMap()
         const containerSelected = document.getElementById(target);
         
         if (containerSelected) {
