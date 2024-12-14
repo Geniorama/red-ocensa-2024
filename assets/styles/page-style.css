@@ -1,5 +1,5 @@
 .banner-principal{
-   height: 60vh;
+   min-height: 60vh;
    background-image: url('/assets/img/portada-covenas.webp');
    background-size: cover;
    background-repeat: no-repeat;
