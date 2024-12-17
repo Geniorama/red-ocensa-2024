@@ -12,13 +12,15 @@ if (containersDots && buttonsInteractive) {
         const containerSelected = document.getElementById(target);
         if (containerSelected) {
           containerSelected.classList.toggle("d-none");
-
+          button.classList.toggle('active')
           // Comprobar visibilidad de los puntos
-          if (containerSelected.classList.contains("d-none")) {
-            button.classList.remove("active");
-          } else {
-            button.classList.add("active");
-          }
+          // if (containerSelected.classList.contains("d-none")) {
+          //   button.classList.remove("active");
+          // } else {
+          //   button.classList.add("active");
+          // }
+
+          scrollToSection('map-terminal-2024')
         } else {
           console.log("No existe el contenedor con el id");
         }
@@ -53,6 +55,8 @@ if(menuInteractive){
           } else {
             link.classList.add("active");
           }
+
+          scrollToSection('col-data-map')
         } else {
           console.log("No existe el contenedor con el id");
         }
@@ -85,6 +89,16 @@ const resetMap = () => {
   buttonsInteractive.forEach(button => {
     button.classList.remove('active')
   })
+}
+
+function scrollToSection(idSection){
+  if(idSection){
+    const targetSection = document.getElementById(idSection);
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
 }
 
 

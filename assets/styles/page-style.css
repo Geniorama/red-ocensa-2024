@@ -149,11 +149,11 @@
     cursor: pointer;
 }
 
-.card-interactive-icons__container:hover .card-interactive-icons___box-icon, .card-interactive-icons__container.active .card-interactive-icons___box-icon{
+.card-interactive-icons__container.active .card-interactive-icons___box-icon{
     background-color: var(--border-fill);
 }
 
-.card-interactive-icons__container:hover .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path, .card-interactive-icons__container.active .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path{
+.card-interactive-icons__container.active .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path{
     fill: var(--hover-color) !important;
 }
 
@@ -185,6 +185,16 @@
     z-index: 2;
     position: absolute;
     height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-interactive-icons__container:hover .card-interactive-icons___box-icon{
+        background-color: var(--border-fill);
+    }
+    
+    .card-interactive-icons__container:hover .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path{
+        fill: var(--hover-color) !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
