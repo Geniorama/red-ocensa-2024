@@ -33,6 +33,7 @@ const menuInteractive = document.getElementById('menu-map')
 const itemsMenu = menuInteractive.querySelectorAll('.link-menu')
 const mapInteractiveContainer = document.getElementById('container-map-terminal-2024')
 const columnInfo = document.getElementById('col-data-map')
+const columnMap = document.getElementById('col-map')
 const cardsInfo = columnInfo.querySelectorAll('.card-list-info')
 
 if(menuInteractive){
@@ -42,6 +43,7 @@ if(menuInteractive){
       const target = link.dataset.target;
       if(target){
         resetCards()
+        resetMap()
         const containerSelected = document.getElementById(target);
         
         if (containerSelected) {
@@ -55,7 +57,8 @@ if(menuInteractive){
           console.log("No existe el contenedor con el id");
         }
 
-        columnInfo.classList.add('col')
+        columnInfo.classList.add('col-lg-5', 'col-xl-4')
+        columnMap.classList.add('col-lg-7', 'col-xl-8')
         mapInteractiveContainer.style.margin = "unset"
 
         

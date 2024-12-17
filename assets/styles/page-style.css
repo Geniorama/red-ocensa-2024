@@ -1,5 +1,5 @@
 .banner-principal{
-   height: 60vh;
+   min-height: 60vh;
    background-image: url('/assets/img/portada-covenas.webp');
    background-size: cover;
    background-repeat: no-repeat;
@@ -92,6 +92,8 @@
 .card-interactive-icons{
     background-color: #f7f7f7;
     position: relative;  
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 
 .card-interactive-icons::before{
@@ -151,7 +153,7 @@
     background-color: var(--border-fill);
 }
 
-.card-interactive-icons__container:hover .card-interactive-icons___box-icon svg path, .card-interactive-icons__container.active .card-interactive-icons___box-icon svg path{
+.card-interactive-icons__container:hover .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path, .card-interactive-icons__container.active .card-interactive-icons___box-icon:not(.not-hover-color-icon) svg path{
     fill: var(--hover-color) !important;
 }
 
@@ -175,6 +177,14 @@
     left: -100%;
     top: -100%;
     border-radius: 50%;
+}
+
+.card-primeros-auxilios{
+    left: calc(100% + 20px);
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -221,3 +231,12 @@
         min-width: 60px;
     }
 } 
+
+@media screen and (max-width: 576px) {
+    .sticky-mobile {
+      position: -webkit-sticky !important;
+      position: sticky !important;
+      top: 0; 
+      z-index: 10;
+    }
+}
