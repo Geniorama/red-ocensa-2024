@@ -2,6 +2,12 @@ const containersDots = document.querySelectorAll(".dots-map-2024");
 const buttonsInteractive = document.querySelectorAll(
   ".card-interactive-icons__container"
 );
+const menuInteractive = document.getElementById('menu-map')
+const itemsMenu = menuInteractive.querySelectorAll('.link-menu')
+const mapInteractiveContainer = document.getElementById('container-map-terminal-2024')
+const columnInfo = document.getElementById('col-data-map')
+const columnMap = document.getElementById('col-map')
+const cardsInfo = columnInfo.querySelectorAll('.card-list-info')
 
 if (containersDots && buttonsInteractive) {
   buttonsInteractive.forEach((button) => {
@@ -13,14 +19,9 @@ if (containersDots && buttonsInteractive) {
         if (containerSelected) {
           containerSelected.classList.toggle("d-none");
           button.classList.toggle('active')
-          // Comprobar visibilidad de los puntos
-          // if (containerSelected.classList.contains("d-none")) {
-          //   button.classList.remove("active");
-          // } else {
-          //   button.classList.add("active");
-          // }
 
           scrollToSection('map-terminal-2024')
+          centerMapToZone(containerSelected, mapInteractiveContainer)
         } else {
           console.log("No existe el contenedor con el id");
         }
@@ -31,12 +32,7 @@ if (containersDots && buttonsInteractive) {
   });
 }
 
-const menuInteractive = document.getElementById('menu-map')
-const itemsMenu = menuInteractive.querySelectorAll('.link-menu')
-const mapInteractiveContainer = document.getElementById('container-map-terminal-2024')
-const columnInfo = document.getElementById('col-data-map')
-const columnMap = document.getElementById('col-map')
-const cardsInfo = columnInfo.querySelectorAll('.card-list-info')
+
 
 if(menuInteractive){
   itemsMenu.forEach(link => {
@@ -101,6 +97,30 @@ function scrollToSection(idSection){
   }
 }
 
+
+function centerMapToZone(zoneElement, mapContainer) {
+  const map = mapContainer || document.getElementById("container-map-terminal-2024");
+  const zone = zoneElement;
+  
+
+  if (map && zone) {
+    const mapContainer = map.parentElement
+    const mapContainerWidth = mapContainer.offsetWidth
+
+    const dotsZone = zone.querySelectorAll('.location-map-dot');
+    const firstDot = dotsZone[0];
+    const firstDotOffsetLeft = firstDot.offsetLeft
+    const dotWidth = firstDot.offsetWidth
+
+    const scrollTo = firstDotOffsetLeft - mapContainerWidth / 2 + dotWidth / 2;
+    mapContainer.scrollTo({
+      left: scrollTo,
+      behavior: "smooth",
+    });
+  } else {
+    console.log("No existe el contenedor del mapa o la zona.");
+  }
+}
 
 // Acoordion functions
 const titleAccordions = document.querySelectorAll('.accordion-title')

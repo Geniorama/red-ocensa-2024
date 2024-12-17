@@ -187,6 +187,11 @@
     height: 100%;
 }
 
+#card-areas-de-servicio{
+    min-width: 750px; 
+    z-index: 3
+}
+
 @media screen and (min-width: 1200px) {
     .card-interactive-icons__container:hover .card-interactive-icons___box-icon{
         background-color: var(--border-fill);
@@ -239,6 +244,10 @@
 
     .terminal-bottom img{
         min-width: 60px;
+    }
+
+    #card-areas-de-servicio{
+        min-width: auto;
     }
 } 
 
