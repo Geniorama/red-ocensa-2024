@@ -239,4 +239,32 @@
       top: 0; 
       z-index: 10;
     }
+
+    .accordion-item{
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .accordion-item.active{
+        display: flex;
+        max-height: 1000px;
+        margin-top: 1rem;
+    }
+
+    .accordion-title{
+        margin: 0;
+    }
+
+    .card-interactive-icons{
+        background-color: white;
+        border-radius: 12px;
+        border: 1px solid #ecebed;
+        margin-top: 10px !important;
+        box-shadow: 0 7px 64px 0 rgba(0, 0, 0, 0.07);
+    }
+
+    .card-interactive-icons::before{
+        display: none;
+    }
 }

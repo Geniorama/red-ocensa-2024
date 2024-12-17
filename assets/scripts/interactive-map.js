@@ -86,3 +86,24 @@ const resetMap = () => {
     button.classList.remove('active')
   })
 }
+
+
+// Acoordion functions
+const titleAccordions = document.querySelectorAll('.accordion-title')
+
+if(titleAccordions){
+  titleAccordions.forEach(title => {
+    title.addEventListener('click', () => {
+      const target = title.dataset.accordion
+      if(target){
+        const accordionSelected = document.getElementById(target)
+        if(accordionSelected){
+          accordionSelected.classList.toggle('active')
+          title.classList.toggle('active')
+        }
+      } else {
+        console.log('No tiene asignado un target')
+      }
+    } )
+  })
+}
