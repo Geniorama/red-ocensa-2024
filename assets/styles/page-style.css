@@ -217,6 +217,12 @@
     z-index: 3
 }
 
+#covenas-monitoreo-13 {
+    .location-map-zona {
+       filter: sepia(1) saturate(3) brightness(0.9) hue-rotate(330deg);
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .card-interactive-icons__container:hover .card-interactive-icons___box-icon{
         background-color: var(--border-fill);
