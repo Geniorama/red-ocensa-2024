@@ -175,6 +175,13 @@
     background-color: white;;
 }
 
+#covenas-sre-15 .location-map-dot {
+    width: 11px;
+    height: 11px;
+    border-color: #27ff00;
+    background-color: white;;
+}
+
 .location-map-dot::before{
     content: '';
     outline: 1px solid var(--outline-color);
