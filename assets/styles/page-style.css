@@ -157,7 +157,7 @@
     fill: var(--hover-color) !important;
 }
 
-.location-map-dot{
+.location-map-dot {
     background-color: black;
     display: block;
     width: 15px;
@@ -166,6 +166,17 @@
     border: 4px solid white;
     box-sizing: border-box;
     position: absolute;
+}
+
+#covenas-sre-13 .location-map-dot {
+    border-radius: 0;
+}
+
+#covenas-sre-13 .location-map-dot {
+    width: 12px;
+    height: 12px;
+    border-color: #ff5512;
+    background-color: white;;
 }
 
 #covenas-sre-14 .location-map-dot {
