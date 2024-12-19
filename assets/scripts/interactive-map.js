@@ -15,6 +15,7 @@ if (containersDots && buttonsInteractive) {
       e.preventDefault();
       const target = button.dataset.target;
       if (target) {
+        resetMap()
         const containerSelected = document.getElementById(target);
         if (containerSelected) {
           containerSelected.classList.toggle("d-none");
@@ -125,19 +126,31 @@ function centerMapToZone(zoneElement, mapContainer) {
 // Acoordion functions
 const titleAccordions = document.querySelectorAll('.accordion-title')
 
-if(titleAccordions){
+const resetAccordions = (currentTarget) => {
+  titleAccordions.forEach(title => {
+    const target = title.dataset.accordion
+    if (target && target !== currentTarget) {
+      const accordionSelected = document.getElementById(target)
+      if (accordionSelected) {
+        accordionSelected.classList.remove('active')
+        title.classList.remove('active')
+      }
+    }
+  })
+}
+
+if (titleAccordions) {
   titleAccordions.forEach(title => {
     title.addEventListener('click', () => {
       const target = title.dataset.accordion
-      if(target){
+      if (target) {
         const accordionSelected = document.getElementById(target)
-        if(accordionSelected){
+        if (accordionSelected) {
+          resetAccordions(target)
           accordionSelected.classList.toggle('active')
           title.classList.toggle('active')
         }
-      } else {
-        console.log('No tiene asignado un target')
       }
-    } )
+    })
   })
 }
