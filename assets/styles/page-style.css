@@ -1,4 +1,5 @@
 .banner-principal{
+   min-height: 60vh;
    background-image: url('/assets/img/portada-covenas.webp');
    background-size: cover;
    background-repeat: no-repeat;
@@ -15,6 +16,10 @@
     background-color: rgba(0,0,0, .6);
 }
 
+.banner-principal .container, .banner-principal .row{
+    height: 100%;
+}
+
 .banner-principal__title{
     font-size: 60px;
     font-family: var(--calibri);
@@ -22,12 +27,6 @@
 
 .banner-principal__subtitle{
     font-size: 24px;
-}
-
-.container-banner-principal{
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1440px;
 }
 
 .terminal-carousel{
@@ -79,7 +78,7 @@
 }
 
 .banner-principal .certifieds img{
-    width: calc(100% / 7);
+    max-width: calc(100% / 7);
 }
 
 .terminal-bottom img{
@@ -218,8 +217,10 @@
     z-index: 3
 }
 
-.wrapper-scroll{
-    overflow: hidden;
+#covenas-monitoreo-13 {
+    .location-map-zona {
+       filter: sepia(1) saturate(3) brightness(0.9) hue-rotate(330deg);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -232,13 +233,11 @@
     }
 }
 
-@media screen and (max-width: 1440px){
-    .wrapper-scroll{
-        overflow-x: scroll;
-    }
-}
-
 @media screen and (max-width: 1200px) {
+    .banner-principal{
+        height: auto;
+    }
+
     .card-ocensa.menu-map a{
         font-size: 16px;
     }
