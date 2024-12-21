@@ -18,6 +18,7 @@
 .banner-principal__title {
   font-size: 60px;
   font-family: var(--calibri);
+  line-height: 1em;
 }
 
 .container-banner-principal {
