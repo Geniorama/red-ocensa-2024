@@ -58,8 +58,8 @@ if(menuInteractive){
           console.log("No existe el contenedor con el id");
         }
 
-        columnInfo.classList.add('col-lg-5', 'col-xl-4')
-        columnMap.classList.add('col-lg-7', 'col-xl-8')
+        columnInfo.classList.add('col-lg-5')
+        columnMap.classList.add('col-lg-7')
         mapInteractiveContainer.style.margin = "unset"
 
         
