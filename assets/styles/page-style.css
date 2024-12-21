@@ -173,10 +173,12 @@
   position: absolute;
 }
 
+#cusiana-sre-8 .location-map-dot,
 #covenas-sre-13 .location-map-dot {
   border-radius: 0;
 }
 
+#cusiana-sre-8 .location-map-dot,
 #covenas-sre-13 .location-map-dot {
   width: 12px;
   height: 12px;
