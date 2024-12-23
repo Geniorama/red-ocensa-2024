@@ -22,7 +22,9 @@ if (containersDots && buttonsInteractive) {
           button.classList.toggle('active')
 
           scrollToSection('map-terminal-2024')
-          centerMapToZone(containerSelected, mapInteractiveContainer)
+          if(screen.width <= 768){
+            centerMapToZone(containerSelected, mapInteractiveContainer)
+          }
         } else {
           console.log("No existe el contenedor con el id");
         }
@@ -58,8 +60,8 @@ if(menuInteractive){
           console.log("No existe el contenedor con el id");
         }
 
-        columnInfo.classList.add('col-lg-5')
-        columnMap.classList.add('col-lg-7')
+        columnInfo.classList.add('col-lg-5', 'col-xl-4')
+        columnMap.classList.add('col-lg-7', 'col-xl-8')
         mapInteractiveContainer.style.margin = "unset"
 
         
