@@ -255,6 +255,18 @@
   }
 }
 
+.dots-map-2024.dots-sre#cusiana-sre-15 .location-map-dot{
+  background-color: white;
+  border-color: var(--outline-color);
+  width: 11px;
+  height: 11px;
+  border-width: 3px;
+}
+
+.dots-map-2024.dots-sre#cusiana-sre-15 .location-map-dot::before{
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .card-interactive-icons__container:hover .card-interactive-icons___box-icon {
     background-color: var(--border-fill);
