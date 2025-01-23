@@ -174,12 +174,14 @@
   position: absolute;
 }
 
+.miraflores-sre-13 .location-map-dot,
 #cusiana-sre-8 .location-map-dot,
 #covenas-sre-13 .location-map-dot,
 #porvenir-sre-8 .location-map-dot {
   border-radius: 0;
 }
 
+.miraflores-sre-13 .location-map-dot,
 #cusiana-sre-8 .location-map-dot,
 #covenas-sre-13 .location-map-dot,
 #porvenir-sre-8 .location-map-dot {
@@ -187,6 +189,10 @@
   height: 12px;
   border-color: #ff5512;
   background-color: white;
+}
+
+.miraflores-sre-13 .location-map-dot::before {
+  outline: 0;
 }
 
 #covenas-sre-14 .location-map-dot {
