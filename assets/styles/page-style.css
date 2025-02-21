@@ -290,6 +290,15 @@
     path {
     fill: var(--hover-color) !important;
   }
+
+  #col-data-map{
+    overflow-y: scroll;
+    box-shadow: 0 7px 64px 0 rgba(0, 0, 0, 0.07);
+    background-color: white;
+    padding: 2em 1em !important;
+    position: relative;
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1440px) {
