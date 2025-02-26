@@ -228,10 +228,6 @@
   height: 100%;
 }
 
-#card-areas-de-servicio {
-  min-width: 750px;
-  z-index: 3;
-}
 
 .wrapper-scroll {
   overflow: hidden;
@@ -354,9 +350,6 @@
     min-width: 60px;
   }
 
-  #card-areas-de-servicio {
-    min-width: auto;
-  }
 }
 
 @media screen and (max-width: 576px) {
