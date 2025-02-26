@@ -158,8 +158,9 @@ if (titleAccordions) {
 const resizeColumnInfo = () => {
   if (mapInteractiveContainer && columnInfo && window.innerWidth >= 1290) {
     const heightMap = mapInteractiveContainer.offsetHeight;
-    columnInfo.style.height = `${heightMap}px`;
+    columnInfo.style.height = `${heightMap - 70}px`;
     columnInfo.classList.add("custom-scroll-2024");
+    columnInfo.style.marginTop = "50px";
     columnInfo.classList.add("shadow");
   }
 };
