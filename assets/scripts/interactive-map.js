@@ -160,6 +160,7 @@ const resizeColumnInfo = () => {
     const heightMap = mapInteractiveContainer.offsetHeight;
     columnInfo.style.height = `${heightMap}px`;
     columnInfo.classList.add("custom-scroll-2024");
+    columnInfo.classList.add("shadow");
   }
 };
 

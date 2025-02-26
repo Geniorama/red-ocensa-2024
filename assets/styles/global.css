@@ -137,17 +137,13 @@
 }
 
 .custom-scroll-2024::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
 }
 
 .custom-scroll-2024::-webkit-scrollbar-thumb {
-    background-color: var(--green-ocensa);
+    background-color: var(--gray-light-ocensa);
     border-radius: 50px;
 }
-
-/* .custom-scroll-2024::-webkit-scrollbar-track {
-    background-color: var(--gray-light-ocensa);
-} */
 
 @media screen and (max-width: 1200px) {
     .container-ocensa-2024{
