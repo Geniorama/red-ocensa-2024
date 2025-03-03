@@ -97,6 +97,7 @@
   position: relative;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
+  padding: 20px !important;
 }
 
 .card-interactive-icons::before {
@@ -382,6 +383,7 @@
     border: 1px solid #ecebed;
     margin-top: 10px !important;
     box-shadow: 0 7px 64px 0 rgba(0, 0, 0, 0.07);
+    padding: 15px !important;
   }
 
   .card-interactive-icons::before {
