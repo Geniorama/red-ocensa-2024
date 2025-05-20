@@ -394,6 +394,12 @@
     min-width: 60px;
   }
 
+  .location-map-dot.dot-image{
+    .dot-image-text{
+      opacity: 1;
+    }
+  }
+
 }
 
 @media screen and (max-width: 576px) {
