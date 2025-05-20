@@ -221,6 +221,49 @@
   border-radius: 50%;
 }
 
+.location-map-dot.dot-image::before{
+  display: none;
+}
+
+.location-map-dot.dot-image{
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: transparent;
+
+  img{
+    width: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .dot-image-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 10px;
+    padding: 5px 8px;
+    padding-left: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translateY(-50%);
+    text-wrap: nowrap;
+    white-space: nowrap;
+    opacity: 0 ;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &:hover{
+    .dot-image-text{
+      opacity: 1;
+    }
+  }
+}
+
 .card-primeros-auxilios {
   left: calc(100% + 20px);
   top: 0;
