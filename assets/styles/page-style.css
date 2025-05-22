@@ -295,17 +295,6 @@
   }
 }
 
-.dots-map-2024.dots-sre#cusiana-sre-15 .location-map-dot{
-  background-color: white;
-  border-color: var(--outline-color);
-  width: 11px;
-  height: 11px;
-  border-width: 3px;
-}
-
-.dots-map-2024.dots-sre#cusiana-sre-15 .location-map-dot::before{
-  display: none;
-}
 
 #porvenir-sre-8 .location-map-dot::before{
   display: none;
