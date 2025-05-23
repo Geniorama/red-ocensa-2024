@@ -300,6 +300,26 @@
   display: none;
 }
 
+.oc-cont-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oc-cont-text__number{
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+.oc-cont-text__desc{
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  line-height: normal;
+}
+
 @media screen and (min-width: 1200px) {
   .card-interactive-icons__container:hover .card-interactive-icons___box-icon {
     background-color: var(--border-fill);
