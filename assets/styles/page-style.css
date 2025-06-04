@@ -176,22 +176,12 @@
 }
 
 .miraflores-sre-13 .location-map-dot,
-<<<<<<< HEAD
-#covenas-sre-13 .location-map-dot,
-=======
-#cusiana-sre-8 .location-map-dot,
->>>>>>> master
-#porvenir-sre-8 .location-map-dot {
+#cusiana-sre-8 .location-map-dot.dot-image{
   border-radius: 0;
 }
 
 .miraflores-sre-13 .location-map-dot,
-<<<<<<< HEAD
-#covenas-sre-13 .location-map-dot,
-=======
-#cusiana-sre-8 .location-map-dot,
->>>>>>> master
-#porvenir-sre-8 .location-map-dot {
+#cusiana-sre-8 .location-map-dot {
   width: 12px;
   height: 12px;
   border-color: #ff5512;
@@ -293,11 +283,6 @@
   .location-map-zona {
     filter: sepia(1) saturate(3) brightness(0.9) hue-rotate(330deg);
   }
-}
-
-
-#porvenir-sre-8 .location-map-dot::before{
-  display: none;
 }
 
 .oc-cont-text{
