@@ -145,6 +145,10 @@
     border-radius: 50px;
 }
 
+#cusiana-sre-6 > span > svg > g > g:nth-child(1) > g > path:nth-child(1){
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .container-ocensa-2024{
         width: 100%;
