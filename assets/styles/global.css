@@ -149,6 +149,10 @@
     display: none;
 }
 
+#accordion-item-incendio > div > div:nth-child(1) > div:nth-child(3):hover > div.card-interactive-icons___box-icon > svg > g{
+    stroke: white;
+}
+
 @media screen and (max-width: 1200px) {
     .container-ocensa-2024{
         width: 100%;
